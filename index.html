@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Fonts -->
+<link rel="stylesheet" href="fonts/gandhi_serif/regular/stylesheet.css">
+<link rel="stylesheet" href="fonts/gandhi_serif/bold/stylesheet.css">
+<link rel="stylesheet" href="fonts/gandhi_serif/italic/stylesheet.css">
+<link rel="stylesheet" href="fonts/gandhi_serif/bold_italic/stylesheet.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+<style>
+body {
+    background-color: #FAFAFA;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'gandhi_serif', 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.35;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    border-bottom: 4px solid black;
+    padding: 20px 0;
+}
+
+section.header {
+    border-bottom: 16px solid black;
+}
+
+section:last-child {
+    border-bottom: 0;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+
+<title>Cellular - Rosalind Franklin Science Building Installation Proposal</title>
+
+<section class="header">
+    <h1>Cellular</h1>
+    <h2>Rosalind Franklin Science Building Installation Proposal</h2>
+
+    <img src="wolves_render_full.png">
+</section>
+
+<section>
+    <h3>Overview</h3>
+
+    <p>
+        Cellular is a proposed installation for the ground floor windows of the Rosalind Franklin Science Building.  The motion of pedestrians outside the building will be detected by cameras and incorporated into a scene projected onto screens in the windows of the building.
+    </p>
+    
+    <p>
+        The projected images will be generated using a cellular automata algorithm.  The algorithm makes new shapes and behaviours emerge from the moving images of the passers-by, as the different colours in the scene compete to gain control of the image.  By interacting more actively with the projection users will be able to have a greater influence on the resulting images, encouraging a deeper engagement with the work.
+    </p>
+
+    <p>
+        The projection will be accompanied by a web application which gathers and displays information about the projection in real-time.  Users will be able to see "high-score" tables of when there was most activity within the scene, and when the algorithm was most stable and most chaotic.  The web application will also provide an opportunity for people who have viewed the installation to learn more about how the algorithm works, and introduce them to the research and teaching that takes place in the building and the wider University.
+    </p>
+
+</section>
+
+<section>
+    <h3>Early Sketch</h3>
+
+    <div class="embed-container"> 
+        <iframe src="https://player.vimeo.com/video/147025186?byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <p>A sketch demonstrating a development version of the cellular automata video algorithm</p>
+</section>
+
+<section>
+    <h3>Technology Outline</h3>
+
+    <ul>
+        <li>Rear-projection from inside building onto screens in windows</li>
+        <li>Cameras detect motion on the street
+            <ul>
+                <li>Potential to use stereo cameras to isolate motion from pedestrians, removing road traffic</li>
+            </ul>
+        </li>
+        <li>Motion information relayed from projector computers to web server for web application</li>
+    </ul>
+</section>
